@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 5vh;
+    width: 100%;
+    /* background-color: #ffffff; */
+    background-color:burlywood;
+    
+}
+
+nav{
+    width:100%;
+    height: 5vh;
+    /* background-color:#edf1fd; */
+    background-color: #f4f7ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    position: fixed;
+    
+}
+
+nav .logo{
+    width: 20%;
+    /* background-color: aqua; */
+    text-align:center;
+    color:red;
+    font-weight: bold;
+    font-size:27px;
+    text-shadow: 2px 2px 2px grey;
+}
+
+
+nav .menu{
+    width:50%;
+    /* background-color: cadetblue; */
+    letter-spacing: 1px;
+    font-family: calibri;
+    /* color:black; */
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13.5px;
+    padding-top: 5px;
+}
+
+nav .menu a{
+    width:22%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;    /* this is due to underline hover effect*/
+    /* background-color: red; */
+}
+
+nav .menu a:hover{
+    color:darkslategrey;
+    transition: all ease 0.4s;
+    
+   
+}
+
+
+main{
+    width: 100%;
+    height: 95vh;
+    background-color: #edf1fd;
+    /* background-color: cadetblue; */
+    /*just use three property to middle the content */
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.hello{
+    font-size: 25px;
+}
+
+h1{
+    letter-spacing: 5px;
+    font-size: 60px;
+    color:#292929;
+
+}
+
+h2{
+    font-size: 50px;
+    color:#292929;
+}
+
+/*content_change */
+.change_content:after{
+    content: "";
+    animation: changetext 10s infinite linear;
+    color:red;
+}
+
+
+/* when u use animation use @keyframes */
+@keyframes changetext{
+    0%{content: "Web Developer";}
+    25%{content: "Desktop Engineer";}
+    50%{content: "Programmer";}
+    75%{content: "Coder";}
+    100%{content: "DevOps Engineer";}
+}
+
+
+
+.cv-btn{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #292929;
+    color:#ffffff;
+}
+
+.cv-btn:hover{
+    background-color: #131313;
+    transition: all ease 0.5s;
+
+
+}
+
+
+
+.aboutbox{
+    width: 100%;
+    height: 100vh;
+    background-color:lavender;
+    /* font-size: 25px; */
+    /* font-family:'Courier New', Courier, monospace; */
+    
+}
+.aboutbox h1{
+    text-align: center;
+    padding-top: 5%;
+    color:slateblue;
+
+}
+
+.aboutbox h2{
+    color:#020c1b;
+    padding-top: 8%;
+    align-items: center;
+    text-align: left;     /* to make text in left side*/
+    padding-left: 20%;
+}
+
+.skillbox{
+    width: 100%;
+    height: 80vh;
+    background-color:white;
+    padding-left:20%;
+    /* padding-top: 10%; */
+    /* text-align: center; */
+    
+}
+
+/*only for heading (my skill) */
+.myskill{
+    width: 100%;
+    height: 20vh;
+    background-color:white;
+}
+
+.myskill h1{
+    color:black;
+    align-items: center;
+    font-size: "";
+    font-family: "";
+    font-weight: bold;
+    padding-top: 3%;
+    /* padding-left:20%; */
+    text-align: center;
+    
+}
+
+
+/*skill all container */
+.container{
+    width:80%;
+    background-color: #ddd;
+    
+    
+    
+    
+   
+    
+
+}
+
+.skills{
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color:white;
+    
+    
+    
+}
+   
+
+.html {width: 80%; background-color: #04AA6D;}
+.css {width: 70%; background-color: #2196F3;}
+.javascript {width: 55%; background-color: #f44336;}
+.python {width: 50%; background-color: #808080;}
+.mysql {width: 70%; background-color: #04AA6D;}
+.devops {width: 60%; background-color: #2196F3;}
+
+
+
+
+.contactbox{
+    width: 100%;
+    height: 100vh;
+    background-color: lavender;
+}
+
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #edf1fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a{
+    height: 100px;
+    width: 100px;
+    background-color: #f5f6fa;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+    line-height: 110px;
+    
+     
+}
+.footer a i{
+    font-size: 35px;
+    transition: all 0.3s linear;
+
+}
+
+.footer a:hover i{
+    transform: scale(1.4);
+}
+
+/* to change all color of icon */
+.fa-instagram{
+    color:#e84393;
+}
+
+.fa-facebook{
+    color:#4267b2;
+}
+
+.fa-linkedin{
+    color:#0077b5;
+}
+
+.fa-github{
+    color:black;
+}
+
+
+.foot{
+    width: 100%;
+    height: 10vh;
+    background-color: gainsboro;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 5px;
+}
